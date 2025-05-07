@@ -16,7 +16,7 @@ const Header: React.FC = () => {
 };`;
 
     return (
-        <section id="home" className="min-h-[calc(100vh-4rem)] grid grid-cols-2 text-white px-4 select-none items-start pt-32 gap-3">
+        <section id="home" className="min-h-[calc(100vh-4rem)] grid grid-cols-2 text-white px-4 items-start pt-32 gap-3">
             <div className="leading-tight text-left translate-x-4 md:translate-x-12">
                 <ul className=" flex gap-4 mb-3">
                     <li>
@@ -44,7 +44,7 @@ const Header: React.FC = () => {
                     FULLSTACK <br /> <span className="ml-24 block text-accent">DEVELOPER</span>
                 </h1>  
             </div>
-            <div className='text-2xl mx-12 my-24'>
+            <div className='text-2xl mx-12 my-24 max-w-auto'>
                 <SyntaxHighlighter language="javascript" style={atomDark} showLineNumbers>
                     {code}
                 </SyntaxHighlighter>
