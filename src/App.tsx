@@ -1,15 +1,14 @@
 import React from 'react';
 import './index.css';
 import Topbar from './components/TopBar';
+import Header from './components/Header';
 
 function App() {
+
   return (
     <div className="App bg-background text-text min-h-screen">
       <Topbar />
-      <div className="p-8">
-        <h2 className="text-2xl font-bold">Tervetuloa!</h2>
-        <p>Tämä on tumma tausta testissä.</p>
-      </div>
+      <Header />
     </div>
   );
 }
