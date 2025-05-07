@@ -6,7 +6,7 @@ import Header from './components/Header';
 function App() {
 
   return (
-    <div className="App bg-background text-text min-h-screen">
+    <div className="App bg-background text-text min-h-screen scroll-smooth">
       <Topbar />
       <Header />
     </div>
