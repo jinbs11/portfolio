@@ -8,7 +8,8 @@ module.exports = {
           surface: '#1a1a2e',
           accent: '#7c3aed',
           highlight: '#e879f9',      // fuchsia-300
-          text: '#fdf4ff',   
+          text: '#fdf4ff',
+          selected_text: '#bae6fd',
         }
       },
     },

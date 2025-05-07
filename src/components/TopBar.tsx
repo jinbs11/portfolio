@@ -5,9 +5,9 @@ const Topbar: React.FC = () => {
     <header className="bg-surface text-text px-6 py-4 flex justify-between items-center shadow-md">
         <h1 className="text-2xl font-bold text-accent">Portfolio</h1>
         <nav className="space-x-4">
-            <a href="#about" className="hover:text-accent">About</a>
-            <a href="#projects" className="hover:text-accent">Projects</a>
-            <a href="#contact" className="hover:text-accent">Contacts</a>
+            <a href="#home" className="hover:text-accent transition">Home</a>
+            <a href="#projects" className="hover:text-accent transition">Projects</a>
+            <a href="#contact" className="hover:text-accent transition">Contacts</a>
         </nav>
     </header>
   );
