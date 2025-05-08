@@ -40,15 +40,29 @@ const Header: React.FC = () => {
                         </a>
                     </li>
                 </ul>
+                <hr className="w-64 my-2 border-t border-gray-300" />
                 <h1 className="text-6xl md:text-8xl font-extrabold">
                     FULLSTACK <br /> <span className="ml-24 block text-accent">DEVELOPER</span>
-                </h1>  
+                </h1>
             </div>
-            <div className='text-2xl mx-12 my-24 max-w-auto'>
-                <SyntaxHighlighter language="javascript" style={atomDark} showLineNumbers>
-                    {code}
-                </SyntaxHighlighter>
-            </div> 
+            <SyntaxHighlighter
+                language="javascript"
+                style={atomDark}
+                showLineNumbers
+                wrapLongLines
+                customStyle={{
+                    borderRadius: '0.5rem',
+                    padding: '1rem',
+                    fontSize: '1.5rem', // text-2xl
+                    whiteSpace: 'pre-wrap', // 🔑 Pakottaa rivinvaihdot toimimaan
+                    wordBreak: 'break-word', // Varmistaa ettei ylipitkät rivit riko asettelua
+                    marginTop: '9rem',
+                    width: '50rem',
+                    overflow: "hidden",
+                }}
+                >
+                {code}
+            </SyntaxHighlighter>
         </section>
     );
 }
